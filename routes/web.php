@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'EventController@index')->name('index');
+
+Route::get('about', 'EventController@about')->name('about');
+
+Route::get('contact', 'ContactController@create')->name('contact');
+
+Route::post('contact', 'ContactController@store')->name('contact_store');
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
