@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
+        <a href="{{ route('detail') }}" class="thumbnail">
             <img src="http://www.skiheavenly.com/~/media/heavenly/images/732x260%20header%20images/events-heavenly-header.ashx">
             <div style="margin-top: 8px">
                 <div class="eventTitle">

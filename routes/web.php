@@ -13,6 +13,8 @@
 
 Route::get('/', 'EventController@index')->name('index');
 
+Route::get('/detail', 'EventController@detail')->name('detail');
+
 Route::get('about', 'EventController@about')->name('about');
 
 Route::get('contact', 'ContactController@create')->name('contact');
